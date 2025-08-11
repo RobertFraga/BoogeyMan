@@ -9,7 +9,7 @@ const Landing = () => {
           <h1
             className="text-purple-700 font-bold leading-tight"
             style={{
-              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)", // Fits 375px without wrap
+              fontSize: "clamp(2rem, 4vw + 1.5rem, 4rem)", // Fits 375px without wrap
             }}
           >
             <span className="whitespace-nowrap">Crafting Scalable</span>{" "}
@@ -24,7 +24,7 @@ const Landing = () => {
           <img
             src={Mainimg}
             alt="Main Visual"
-            className="w-full max-w-[500px] pr-5"
+            className="w-full max-w-[1000px] pr-5"
           />
         </div>
       </main>

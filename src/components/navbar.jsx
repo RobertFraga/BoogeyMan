@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-500">
+    <nav className="bg-[#FFF7F7] border-gray-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16">
           BoogeyMan
