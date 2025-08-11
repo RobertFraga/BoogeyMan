@@ -1,7 +1,7 @@
 import Mainimg from "../assets/Version control-amico.svg";
 import about from "../assets/Version control-bro.svg";
 import Caroucel from "../components/Caroucel";
-
+import Card from "../components/project";
 const Landing = () => {
   return (
     <>
@@ -50,6 +50,16 @@ const Landing = () => {
             bring ideas to life with clean code, modern tech stacks, and
             user-first design.
           </p>
+        </div>
+      </div>
+
+      <div className="bg-purple-700 min-h-[300px] pb-7 flex flex-col items-center justify-center">
+        <h2 className="md:text-5xl text-4xl font-bold text-center m-7">
+          Projects
+        </h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <Card title="SMS" />
+          <Card title="simple blog" />
         </div>
       </div>
     </>
