@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
+        <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16">
           BoogeyMan
         </span>
         <button
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-purple-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-purple md:dark:hover:text-purple-500 dark:hover:bg-purple-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-purple-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-purple md:dark:hover:text-purple-500 dark:hover:bg-purple-700 dark:hover:text-white md:dark:hover:bg-transparent md:pr-16"
               >
                 Contact
               </a>
