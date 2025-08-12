@@ -1,10 +1,13 @@
 import Mainimg from "../assets/Version control-amico.svg";
 import about from "../assets/Version control-bro.svg";
 import Caroucel from "../components/Caroucel";
+import Footer from "../components/footer";
 import Card from "../components/project";
+
 const Landing = () => {
   return (
     <>
+      {/* hero section */}
       <main className="flex flex-col md:flex-row items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
         <div className="flex-1">
           <h1
@@ -29,17 +32,19 @@ const Landing = () => {
           />
         </div>
       </main>
+
+      {/* Tech Stack section*/}
       <Caroucel />
+
+      {/* About section */}
       <div className="relative md:flex md:m-30">
-        {/* Image */}
         <img
           src={about}
           alt="about me"
           className="w-full md:w-1/2 object-cover"
         />
 
-        {/* Mask/Text */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/90 p-6 md:static md:w-1/2 md:bg-transparent md:items-start md:justify-center">
+        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 md:static md:w-1/2 md:bg-transparent md:items-start md:justify-center">
           <h2 className="sm:text-purple-700 md:text-6xl text-4xl font-bold mb-4">
             About me
           </h2>
@@ -53,7 +58,8 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="bg-purple-700 min-h-[300px] pb-7 flex flex-col items-center justify-center">
+      {/* Project section */}
+      <section className="bg-purple-700 min-h-[300px] pb-7 flex flex-col items-center justify-center">
         <h2 className="md:text-5xl text-4xl font-bold text-center m-7">
           Projects
         </h2>
@@ -61,7 +67,46 @@ const Landing = () => {
           <Card title="SMS" />
           <Card title="simple blog" />
         </div>
-      </div>
+      </section>
+
+      <section>
+        <h2 className="md:text-5xl text-4xl font-bold text-center m-7 text-purple-700">
+          Services
+        </h2>
+
+        <div className="md:flex m-10">
+          <div className="m-10">
+            <h3 className="text-purple-700 font-bold text-lg">Web Design</h3>
+            <p className="text-black">
+              Crafting intuitive and modern UI mockups for seamless web
+              development
+            </p>
+          </div>
+
+          <div className="m-10">
+            <h3 className="text-purple-700 font-bold text-lg">
+              Frontend Development
+            </h3>
+            <p className="text-black">
+              Building fast, responsive, and accessible user interfaces with
+              clean, modern code.
+            </p>
+          </div>
+
+          <div className="m-10">
+            <h3 className="text-purple-700 font-bold text-lg">
+              Backend Development
+            </h3>
+            <p className="text-black">
+              Designing secure, scalable, and efficient server-side systems to
+              power modern web applications
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* footer with contact */}
+      <Footer />
     </>
   );
 };
