@@ -13,7 +13,7 @@ const Footer = () => {
         </h2>
 
         <div className="flex justify-center gap-x-12">
-          <a href="mailto:robertfraga517@mail.com">
+          <a href="mailto:robertfraga517@gmail.com">
             <img src={gmail} alt="Gmail" className="w-8" />
           </a>
 

@@ -64,8 +64,14 @@ const Landing = () => {
           Projects
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-          <Card title="SMS" />
-          <Card title="simple blog" />
+          <Card
+            title="SMS"
+            link="https://github.com/RobertFraga/Student-Management-System"
+          />
+          <Card
+            title="simple blog"
+            link="https://github.com/RobertFraga/React-blog"
+          />
         </div>
       </section>
 
