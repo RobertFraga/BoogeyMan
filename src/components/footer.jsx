@@ -13,7 +13,7 @@ const Footer = () => {
         </h2>
 
         <div className="flex justify-center gap-x-12">
-          <a href="mailto:robertfraga517@gmail.com">
+          <a href="mailto:robertfraga517@mail.com">
             <img src={gmail} alt="Gmail" className="w-8" />
           </a>
 
@@ -22,7 +22,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="www.linkedin.com/in/robert-fraga-2b592526a"
+            href="https://www.linkedin.com/in/robert-fraga-2b592526a"
             target="_blank"
             rel="noopener noreferrer"
           >
