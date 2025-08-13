@@ -61,6 +61,22 @@
   animation: floating 5s ease-in-out infinite, spinning 8s linear infinite;
 }
 
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-floating-slide {
+  animation: slideInLeft 0.8s ease-out forwards,
+    floating 3s ease-in-out infinite 0.8s; /* starts after slide-in */
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;

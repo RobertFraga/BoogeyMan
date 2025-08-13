@@ -28,7 +28,7 @@ const Landing = () => {
           <img
             src={Mainimg}
             alt="Main Visual"
-            className="w-full max-w-[500px] pr-5 animate-floating"
+            className="w-full max-w-[500px] pr-5 animate-floating-slide"
           />
         </div>
       </main>
