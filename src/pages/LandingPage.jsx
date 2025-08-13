@@ -8,12 +8,12 @@ const Landing = () => {
   return (
     <>
       {/* hero section */}
-      <main className="flex flex-col md:flex-row items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
+      <main className="flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
         <div className="flex-1">
           <h1
             className="text-purple-700 font-black leading-tight"
             style={{
-              fontSize: "clamp(2rem, 4vw + 1.5rem, 4rem)", // Fits 375px without wrap
+              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)", // Fits 375px without wrap
             }}
           >
             <span className="whitespace-nowrap">Crafting Scalable</span>{" "}
@@ -28,7 +28,7 @@ const Landing = () => {
           <img
             src={Mainimg}
             alt="Main Visual"
-            className="w-full max-w-[1000px] pr-5 animate-floating"
+            className="w-full max-w-[500px] pr-5 animate-floating"
           />
         </div>
       </main>
@@ -41,14 +41,24 @@ const Landing = () => {
         <img
           src={about}
           alt="about me"
-          className="w-full md:w-1/2 object-cover"
+          className="w-full max-w-[500px] object-cover"
         />
 
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 md:static md:w-1/2 md:bg-transparent md:items-start md:justify-center">
-          <h2 className="sm:text-purple-700 md:text-6xl text-4xl font-bold mb-4">
+          <h2
+            className="sm:text-purple-700 md:text-6xl text-4xl font-bold mb-4"
+            style={{
+              fontSize: "clamp(0.3rem, 0.01vw + 2.5rem, 3rem)", // Fits 375px without wrap
+            }}
+          >
             About me
           </h2>
-          <p className="sm:text-purple-700 md:text-left text-center text-xl md:text-2xl md:font-semibold">
+          <p
+            className="sm:text-purple-700 md:text-left text-center text-xl md:text-2xl md:font-semibold"
+            style={{
+              fontSize: "clamp(0.3rem, 0.01vw + 1rem, 3rem)", // Fits 375px without wrap
+            }}
+          >
             I'm a freelance web developer focused on crafting responsive,
             high-performance websites and web apps that scale with your
             business. From startups to solo founders or solo projects, I help
@@ -80,8 +90,8 @@ const Landing = () => {
           Services
         </h2>
 
-        <div className="md:flex m-10">
-          <div className="m-10">
+        <div className="md:flex md:justify-evenly m-10">
+          <div className="m-10 flex-1/2">
             <h3 className="text-purple-700 font-bold text-lg">Web Design</h3>
             <p className="text-black">
               Crafting intuitive and modern UI mockups for seamless web
@@ -89,7 +99,7 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="m-10">
+          <div className="m-10 flex-1/2">
             <h3 className="text-purple-700 font-bold text-lg">
               Frontend Development
             </h3>
@@ -99,7 +109,7 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="m-10">
+          <div className="m-10 flex-1/2">
             <h3 className="text-purple-700 font-bold text-lg">
               Backend Development
             </h3>
