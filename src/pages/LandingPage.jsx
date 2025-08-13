@@ -28,7 +28,7 @@ const Landing = () => {
           <img
             src={Mainimg}
             alt="Main Visual"
-            className="w-full max-w-[1000px] pr-5"
+            className="w-full max-w-[1000px] pr-5 animate-floating"
           />
         </div>
       </main>
@@ -69,7 +69,7 @@ const Landing = () => {
             link="https://github.com/RobertFraga/Student-Management-System"
           />
           <Card
-            title="simple blog"
+            title="Simple blog"
             link="https://github.com/RobertFraga/React-blog"
           />
         </div>

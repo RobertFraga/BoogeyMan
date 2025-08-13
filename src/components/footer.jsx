@@ -14,11 +14,19 @@ const Footer = () => {
 
         <div className="flex justify-center gap-x-12">
           <a href="mailto:robertfraga517@gmail.com">
-            <img src={gmail} alt="Gmail" className="w-8" />
+            <img
+              src={gmail}
+              alt="Gmail"
+              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            />
           </a>
 
           <a href="viber://chat?number=%+639457134009">
-            <img src={viber} alt="Viber" className="w-8" />
+            <img
+              src={viber}
+              alt="Viber"
+              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            />
           </a>
 
           <a
@@ -26,11 +34,18 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedin} alt="LinkedIn" className="w-8" />
+            <img
+              src={linkedin}
+              alt="LinkedIn"
+              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            />
           </a>
 
           <a href="https://github.com/RobertFraga">
-            <img src={github} className="w-8" />
+            <img
+              src={github}
+              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            />
           </a>
 
           <a
@@ -38,7 +53,11 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={discord} alt="Discord" className="w-8" />
+            <img
+              src={discord}
+              alt="Discord"
+              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            />
           </a>
         </div>
       </footer>
