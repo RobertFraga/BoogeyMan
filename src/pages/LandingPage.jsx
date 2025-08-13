@@ -49,7 +49,7 @@ const Landing = () => {
                   lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
         >
           <h2
-            className="text-purple-700 font-bold mb-4 text-center lg:text-left animate-floating-slide"
+            className="sm:text-purple-700 font-bold mb-4 text-center lg:text-left text-[#FFF7F7]"
             style={{
               fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
             }}
@@ -57,7 +57,7 @@ const Landing = () => {
             About me
           </h2>
           <p
-            className="text-purple-700 text-center lg:text-left font-semibold leading-relaxed animate-floating-slide"
+            className="sm:text-purple-700 text-center lg:text-left font-semibold leading-relaxed text-[#FFF7F7]"
             style={{
               fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
             }}
