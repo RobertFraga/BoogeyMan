@@ -37,26 +37,29 @@ const Landing = () => {
       <Caroucel />
 
       {/* About section */}
-      <div className="relative md:flex md:m-30">
+      <div className="relative lg:flex lg:m-20">
         <img
           src={about}
           alt="about me"
-          className="w-full max-w-[500px] object-cover"
+          className="w-full max-w-[500px] object-cover mx-auto"
         />
 
-        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 md:static md:w-1/2 md:bg-transparent md:items-start md:justify-center">
+        <div
+          className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 
+                  lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
+        >
           <h2
-            className="sm:text-purple-700 md:text-6xl text-4xl font-bold mb-4"
+            className="text-purple-700 font-bold mb-4 text-center lg:text-left"
             style={{
-              fontSize: "clamp(0.3rem, 0.01vw + 2.5rem, 3rem)", // Fits 375px without wrap
+              fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
             }}
           >
             About me
           </h2>
           <p
-            className="sm:text-purple-700 md:text-left text-center text-xl md:text-2xl md:font-semibold"
+            className="text-purple-700 text-center lg:text-left font-semibold leading-relaxed"
             style={{
-              fontSize: "clamp(0.3rem, 0.01vw + 1rem, 3rem)", // Fits 375px without wrap
+              fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
             }}
           >
             I'm a freelance web developer focused on crafting responsive,
