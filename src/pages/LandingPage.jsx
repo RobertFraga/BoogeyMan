@@ -8,23 +8,25 @@ const Landing = () => {
   return (
     <>
       {/* hero section */}
-      <main className="flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
-        <div className="flex-1">
+      <main className="relative flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
+        <div className="object-one bg-purple-200 absolute bottom-0 left-0 z-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-56 lg:h-56"></div>
+
+        <div className="flex-1 relative">
           <h1
-            className="text-purple-700 font-black leading-tight bounce-on-load"
+            className="text-purple-700 font-black leading-tight bounce-on-load z-20 relative"
             style={{
-              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)", // Fits 375px without wrap
+              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)",
             }}
           >
             <span className="whitespace-nowrap">Crafting Scalable</span>{" "}
             Solutions for the Modern Web
           </h1>
-          <p className="text-purple-700 font-bold mt-4">
+          <p className="text-purple-700 font-bold mt-4 z-10 relative">
             Helping Team and Startup go Further, Faster
           </p>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 relative z-10">
           <img
             src={Mainimg}
             alt="Main Visual"
