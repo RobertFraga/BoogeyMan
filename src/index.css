@@ -98,6 +98,18 @@
   animation-delay: 0.5s; /* start half-second after load */
 }
 
+.object-one {
+  width: 500px;
+  height: 500px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.object-two {
+  width: 500px;
+  height: 500px;
+  border-radius: 59% 41% 31% 69% / 80% 32% 68% 20%;
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;
