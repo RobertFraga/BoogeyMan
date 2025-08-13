@@ -1,5 +1,5 @@
-import Mainimg from "../assets/Version control-amico.svg";
-import about from "../assets/Version control-bro.svg";
+import Mainimg from "../assets/svg/coding.svg";
+import about from "../assets/svg/me.svg";
 import Caroucel from "../components/Caroucel";
 import Footer from "../components/footer";
 import Card from "../components/project";
@@ -11,7 +11,7 @@ const Landing = () => {
       <main className="flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
         <div className="flex-1">
           <h1
-            className="text-purple-700 font-black leading-tight"
+            className="text-purple-700 font-black leading-tight bounce-on-load"
             style={{
               fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)", // Fits 375px without wrap
             }}
@@ -49,7 +49,7 @@ const Landing = () => {
                   lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
         >
           <h2
-            className="text-purple-700 font-bold mb-4 text-center lg:text-left"
+            className="text-purple-700 font-bold mb-4 text-center lg:text-left animate-floating-slide"
             style={{
               fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
             }}
@@ -57,7 +57,7 @@ const Landing = () => {
             About me
           </h2>
           <p
-            className="text-purple-700 text-center lg:text-left font-semibold leading-relaxed"
+            className="text-purple-700 text-center lg:text-left font-semibold leading-relaxed animate-floating-slide"
             style={{
               fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
             }}

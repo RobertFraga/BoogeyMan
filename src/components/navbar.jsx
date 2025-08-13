@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-[#FFF7F7] border-gray-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16">
-          BoogeyMan
+          <a href="">BoogeyMan</a>
         </span>
         <button
           onClick={() => setIsOpen(!isOpen)}
