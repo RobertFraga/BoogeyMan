@@ -41,7 +41,7 @@ const Landing = () => {
         <img
           src={about}
           alt="about me"
-          className="w-full max-w-[500px] object-cover mx-auto"
+          className="w-full max-w-[500px] object-cover mx-auto animate-floating"
         />
 
         <div
@@ -94,7 +94,7 @@ const Landing = () => {
         </h2>
 
         <div className="md:flex md:justify-evenly m-10">
-          <div className="m-10 flex-1/2">
+          <div className="cursor-pointer  m-10 flex-1/2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <h3 className="text-purple-700 font-bold text-lg">Web Design</h3>
             <p className="text-black">
               Crafting intuitive and modern UI mockups for seamless web
@@ -102,7 +102,7 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="m-10 flex-1/2">
+          <div className="cursor-pointer  m-10 flex-1/2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <h3 className="text-purple-700 font-bold text-lg">
               Frontend Development
             </h3>
@@ -112,7 +112,7 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="m-10 flex-1/2">
+          <div className="cursor-pointer m-10 flex-1/2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <h3 className="text-purple-700 font-bold text-lg">
               Backend Development
             </h3>
