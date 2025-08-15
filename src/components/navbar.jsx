@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#FFF7F7] border-gray-500">
+    <nav className=" border-gray-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16">
           <a href="">BoogeyMan</a>
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#FFF7F7]">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
               <a
                 href="#"
