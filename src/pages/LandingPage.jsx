@@ -33,6 +33,44 @@ const Landing = () => {
         </div>
       </main>
 
+      {/* Tech Stack Section */}
+      <Caroucel />
+
+      {/* About section */}
+      <div className="relative lg:flex lg:m-20">
+        <img
+          src={about}
+          alt="about me"
+          className="w-full max-w-[500px] object-cover mx-auto animate-floating"
+        />
+
+        <div
+          className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 
+                  lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
+        >
+          <h2
+            className="sm:text-purple-700 font-bold mb-4 text-center lg:text-left text-[#FFF7F7]"
+            style={{
+              fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
+            }}
+          >
+            About me
+          </h2>
+          <p
+            className="sm:text-purple-700 text-center lg:text-left font-semibold leading-relaxed text-[#FFF7F7]"
+            style={{
+              fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
+            }}
+          >
+            I'm a freelance web developer focused on crafting responsive,
+            high-performance websites and web apps that scale with your
+            business. From startups to solo founders or solo projects, I help
+            bring ideas to life with clean code, modern tech stacks, and
+            user-first design.
+          </p>
+        </div>
+      </div>
+
       {/* Project section */}
       <section className="bg-purple-700 min-h-[300px] pb-7 flex flex-col items-center justify-center">
         <h2 className="md:text-5xl text-4xl font-bold text-center m-7">
