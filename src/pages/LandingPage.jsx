@@ -8,70 +8,30 @@ const Landing = () => {
   return (
     <>
       {/* hero section */}
-      <main className="relative flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
-        <div className="object-one bg-purple-200 absolute bottom-0 left-0 z-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-56 lg:h-56"></div>
-
-        <div className="flex-1 relative">
+      <main className="flex flex-col md:flex-row items-center lg:justify-items-center m-5 md:ml-20 space-y-6 md:space-y-0 md:space-x-8 text-center md:text-left">
+        <div className="flex-1">
           <h1
-            className="text-purple-700 font-black leading-tight bounce-on-load z-20 relative"
+            className="text-purple-700 font-black leading-tight bounce-on-load"
             style={{
-              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)",
+              fontSize: "clamp(2rem, 4vw + 1.5rem, 5rem)", // Fits 375px without wrap
             }}
           >
             <span className="whitespace-nowrap">Crafting Scalable</span>{" "}
             Solutions for the Modern Web
           </h1>
-          <p className="text-purple-700 font-bold mt-4 z-10 relative">
+          <p className="text-purple-700 font-bold mt-4">
             Helping Team and Startup go Further, Faster
           </p>
         </div>
 
-        <div className="flex-1 relative z-10">
+        <div className="flex-1">
           <img
             src={Mainimg}
             alt="Main Visual"
-            className="w-full max-w-[500px] pr-5"
+            className="w-full max-w-[500px] pr-5 animate-floating-slide"
           />
         </div>
       </main>
-
-      {/* Tech Stack section*/}
-      <Caroucel />
-
-      {/* About section */}
-      <div className="relative lg:flex lg:m-20">
-        <img
-          src={about}
-          alt="about me"
-          className="w-full max-w-[500px] object-cover mx-auto animate-floating"
-        />
-
-        <div
-          className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 
-                  lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
-        >
-          <h2
-            className="sm:text-purple-700 font-bold mb-4 text-center lg:text-left text-[#FFF7F7]"
-            style={{
-              fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
-            }}
-          >
-            About me
-          </h2>
-          <p
-            className="sm:text-purple-700 text-center lg:text-left font-semibold leading-relaxed text-[#FFF7F7]"
-            style={{
-              fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
-            }}
-          >
-            I'm a freelance web developer focused on crafting responsive,
-            high-performance websites and web apps that scale with your
-            business. From startups to solo founders or solo projects, I help
-            bring ideas to life with clean code, modern tech stacks, and
-            user-first design.
-          </p>
-        </div>
-      </div>
 
       {/* Project section */}
       <section className="bg-purple-700 min-h-[300px] pb-7 flex flex-col items-center justify-center">
