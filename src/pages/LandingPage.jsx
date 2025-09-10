@@ -3,6 +3,7 @@ import about from "../assets/svg/me.svg";
 import Caroucel from "../components/Caroucel";
 import Footer from "../components/footer";
 import Card from "../components/project";
+import Check from "../assets/check.svg";
 
 const Landing = () => {
   return (
@@ -54,28 +55,45 @@ const Landing = () => {
 
         <div
           className="absolute inset-0 flex flex-col justify-center items-center bg-black/80 p-6 
-                  lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
+          lg:static lg:w-1/2 lg:bg-transparent lg:items-start lg:justify-center"
         >
-          <h2
-            className="sm:text-purple-700 font-bold mb-4 text-center lg:text-left text-[#FFF7F7]"
-            style={{
-              fontSize: "clamp(1.8rem, 2.5vw, 3rem)", // more tablet-friendly scaling
-            }}
-          >
-            About me
+          <h2 className="text-[#FFF7F7] lg:text-purple-700 font-bold mb-4 text-center lg:text-left text-3xl">
+            About Me
           </h2>
+
           <p
-            className="sm:text-purple-700 text-center lg:text-left font-semibold leading-relaxed text-[#FFF7F7]"
+            className="text-[#FFF7F7] lg:text-purple-700 text-center lg:text-left font-semibold leading-relaxed"
             style={{
               fontSize: "clamp(1rem, 1.8vw, 1.5rem)",
             }}
           >
-            I'm a freelance web developer focused on crafting responsive,
-            high-performance websites and web apps that scale with your
-            business. From startups to solo founders or solo projects, I help
-            bring ideas to life with clean code, modern tech stacks, and
-            user-first design.
+            I help businesses and startups turn ideas into fast, scalable, and
+            user-friendly websites. From concept to launch, I deliver clean
+            code, modern design, and solutions that grow with your business.
           </p>
+
+          <ul className="mt-4 space-y-2 text-[#FFF7F7] lg:text-purple-700 text-sm lg:text-base">
+            <li className="flex items-center gap-2">
+              <img src={Check} className="w-4 h-4" alt="check" />
+              <span>2+ Years building responsive web apps</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <img src={Check} className="w-4 h-4" alt="check" />
+              <span>Skilled in React, Tailwind, Django</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <img src={Check} className="w-4 h-4" alt="check" />
+              <span>Strong focus on user-first design</span>
+            </li>
+          </ul>
+
+          {/* CTA */}
+          <a
+            href="mailto:robertfraga517@gmail.com"
+            className="mt-6 inline-block bg-purple-700 hover:bg-purple-800 text-white font-medium rounded-3xl px-6 py-2 shadow-lg transition"
+          >
+            Work With Me
+          </a>
         </div>
       </div>
 
