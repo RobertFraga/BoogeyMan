@@ -7,25 +7,30 @@ import discord from "../assets/icons/discord.svg";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-purple-700 p-7">
-        <h2 className="md:text-5xl text-3xl font-bold text-center text-[#FFF7F7] mb-10">
-          Robert Fraga
-        </h2>
+      <footer className="bg-gradient-to-r from-purple-700 via-indigo-700 to-purple-800 p-10 text-center text-white animate-gradient-x">
+        <h2 className="md:text-5xl text-3xl font-bold mb-2">Robert Fraga</h2>
+        <p className="text-lg opacity-90 mb-6">
+          Web Developer | React • Django • Tailwind
+        </p>
+        <p className="mb-8 text-sm">Let's build something great together 🚀</p>
 
-        <div className="flex justify-center gap-x-12">
-          <a href="mailto:robertfraga517@gmail.com">
+        <div className="flex justify-center gap-x-10">
+          <a href="mailto:robertfraga517@gmail.com" aria-label="Email Robert">
             <img
               src={gmail}
               alt="Gmail"
-              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="w-8 transition duration-300 hover:-translate-y-1 hover:scale-110"
             />
           </a>
 
-          <a href="viber://chat?number=%+639457134009">
+          <a
+            href="viber://chat?number=%+639457134009"
+            aria-label="Chat on Viber"
+          >
             <img
               src={viber}
               alt="Viber"
-              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="w-8 transition duration-300 hover:-translate-y-1 hover:scale-110"
             />
           </a>
 
@@ -33,18 +38,25 @@ const Footer = () => {
             href="https://www.linkedin.com/in/robert-fraga-2b592526a"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
           >
             <img
               src={linkedin}
               alt="LinkedIn"
-              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="w-8 transition duration-300 hover:-translate-y-1 hover:scale-110"
             />
           </a>
 
-          <a href="https://github.com/RobertFraga">
+          <a
+            href="https://github.com/RobertFraga"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
             <img
               src={github}
-              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              alt="GitHub"
+              className="w-8 transition duration-300 hover:-translate-y-1 hover:scale-110"
             />
           </a>
 
@@ -52,11 +64,12 @@ const Footer = () => {
             href="https://discord.com/users/916161484843810856"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Discord Profile"
           >
             <img
               src={discord}
               alt="Discord"
-              className="w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="w-8 transition duration-300 hover:-translate-y-1 hover:scale-110"
             />
           </a>
         </div>
