@@ -1,14 +1,22 @@
 import { useState } from "react";
+import logo from "../assets/develop-svgrepo-com.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" border-gray-500">
+    <nav className="border-gray-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16">
-          <a href="">BoogeyMan</a>
-        </span>
+        {/* Brand Logo + Name */}
+        <a
+          href="/"
+          className="flex items-center gap-2 text-2xl font-bold whitespace-nowrap text-purple-700 md:pl-16"
+        >
+          <img src={logo} alt="BoogeyMan Logo" className="w-10 h-10" />
+          BoogeyMan
+        </a>
+
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
@@ -32,6 +40,8 @@ const Navbar = () => {
             />
           </svg>
         </button>
+
+        {/* Nav Links */}
         <div
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
         >
