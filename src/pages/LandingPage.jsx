@@ -22,6 +22,14 @@ const Landing = () => {
           <p className="text-purple-700 font-bold mt-4">
             Helping Team and Startup go Further, Faster
           </p>
+
+          <a
+            href="mailto:robertfraga517@gmail.com"
+            aria-label="Email Robert"
+            className="mt-6 focus:outline-none block sm:inline-block text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-3xl text-base px-8 py-3 mb-2 shadow-lg hover:shadow-xl transition w-full sm:w-auto mx-auto sm:mx-0 text-center"
+          >
+            Let's Talk
+          </a>
         </div>
 
         <div className="flex-1">

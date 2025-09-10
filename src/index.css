@@ -110,6 +110,21 @@
   border-radius: 59% 41% 31% 69% / 80% 32% 68% 20%;
 }
 
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 10s ease infinite;
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;
